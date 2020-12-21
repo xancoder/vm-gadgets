@@ -15,6 +15,6 @@ sudo apt -y dist-upgrade
 sudo apt -y autoremove
 sudo apt autoclean
 
-sudo apt install build-essential dkms linux-headers-"$(uname -r)"
+sudo apt -y install build-essential dkms linux-headers-"$(uname -r)"
 sudo sh /media/"${USER}"/VBox*/VBoxLinuxAdditions.run
 sudo usermod -aG vboxsf "${USER}"
