@@ -1,13 +1,6 @@
 #!/usr/bin/env bash
 
-# echo commands to stdout
-set -x
-
-# exit on first error
-set -e
-
-# treat undefined environment variables as errors
-set -u
+set -Eeuo pipefail
 
 sudo apt update
 sudo apt -y upgrade
